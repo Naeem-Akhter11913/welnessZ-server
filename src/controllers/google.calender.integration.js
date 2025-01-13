@@ -1,10 +1,5 @@
 const { google } = require('googleapis');
 const metaDataModel = require('../schema/metaDataModal')
-// const fs = require('fs');
-
-
-// const credentials = JSON.parse(fs.readFileSync('credentials.json', 'utf8'));
-// const { client_id, client_secret, redirect_uris } = credentials.web;
 
 const oAuth2Client = new google.auth.OAuth2(
     process.env.GOOGLE_CALENDER_CLIENT_ID,
