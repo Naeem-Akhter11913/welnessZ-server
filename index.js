@@ -48,7 +48,7 @@ app.use('/api/1.0/user', userRoutes);
 app.use('/api/1.0/calender', calendarRoute);
 
 app.use('/',(req,res) =>{
-    res.status(200).json({message:"Success"})
+    res.status(200).json({message:'Node.js server is running on Vercel!'})
 })
 
 // Start the server
